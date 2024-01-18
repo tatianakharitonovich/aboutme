@@ -65,12 +65,13 @@ const LandingSection = () => {
 
   return (
     <FullScreenSection
+      w="100%"
       isDarkBackground
       backgroundColor="rgb(164, 122, 104)"
       py={16}
       spacing={8}
     >
-      <VStack w="1024px" p={32} alignItems="flex-start">
+      <VStack w="100%" p={8} alignItems="flex-start">
         <Heading as="h1" id="contactme">
           Contact me
         </Heading>
