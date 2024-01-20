@@ -62,7 +62,8 @@ const Header = () => {
     >
       <Box color="white" maxWidth="1280px" margin="0 auto">
         <Stack
-          direction={['column', 'row']} spacing='24px'
+          direction={['column', 'row']}
+          spacing="24px"
           px={16}
           py={4}
           justifyContent="space-between"
