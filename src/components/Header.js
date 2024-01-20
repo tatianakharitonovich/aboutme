@@ -5,7 +5,7 @@ import {
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { Box, HStack, Image } from "@chakra-ui/react";
+import { Box, Stack, HStack, Image } from "@chakra-ui/react";
 
 const socials = [
   {
@@ -61,7 +61,8 @@ const Header = () => {
       backgroundColor="#970747"
     >
       <Box color="white" maxWidth="1280px" margin="0 auto">
-        <HStack
+        <Stack
+          direction={['column', 'row']} spacing='24px'
           px={16}
           py={4}
           justifyContent="space-between"
@@ -73,6 +74,7 @@ const Header = () => {
                 <Image
                   src={require("../images/logo.jpg")}
                   height={"80px"}
+                  minWidth={"63px"}
                 />
               </a>
               <HStack spacing={8}>
@@ -97,7 +99,7 @@ const Header = () => {
               <a href="#contactme">Contact Me</a>
             </HStack>
           </nav>
-        </HStack>
+        </Stack>
       </Box>
     </Box>
   );
